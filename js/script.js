@@ -1,3 +1,5 @@
+
+
 //ruch komputera
 
 function playGame(playerInput) {
@@ -74,7 +76,7 @@ function playGame(playerInput) {
     }
 
 
-    
+}
 
     document.getElementById('rock').addEventListener('click', function () {
         playGame(1)
@@ -86,5 +88,5 @@ function playGame(playerInput) {
         playGame()
     });
 
-}
+
 
