@@ -6,11 +6,11 @@ function playGame(playerInput) {
     clearMessages();
     printMessage('<hr>');
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    let computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
     function getMoveName(argMoveId) {
         if (argMoveId == 1) {
@@ -34,7 +34,7 @@ function playGame(playerInput) {
 
     console.log('Gracz wpisał: ' + playerInput);
 
-    let playerMove = 'nieznany ruch';
+    let playerMove
 
     if (playerInput == '1') {
         playerMove = 'kamień';
@@ -85,7 +85,7 @@ function playGame(playerInput) {
         playGame(2)
     });
     document.getElementById('scissors').addEventListener('click', function () {
-        playGame()
+        playGame(3)
     });
 
 
