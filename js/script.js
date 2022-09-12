@@ -1,5 +1,5 @@
 
-
+{
 //ruch komputera
 
 function playGame(playerInput) {
@@ -10,9 +10,7 @@ function playGame(playerInput) {
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    const computerMove = getMoveName(randomNumber);
-
-    function getMoveName(argMoveId) {
+    const computerMove = function(argMoveId) {
         if (argMoveId == 1) {
             return 'kamień';
         } else if (argMoveId == 2) {
@@ -34,7 +32,7 @@ function playGame(playerInput) {
 
     console.log('Gracz wpisał: ' + playerInput);
 
-    let playerMove
+    
 
     if (playerInput == '1') {
         playerMove = 'kamień';
@@ -53,7 +51,7 @@ function playGame(playerInput) {
     //wynik
 
     function displayResult(argComputerMove, argPlayerMove) {
-        printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+   
 
         if (argComputerMove == playerMove) {
             printMessage('Remis');
@@ -90,3 +88,4 @@ function playGame(playerInput) {
 
 
 
+}
