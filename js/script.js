@@ -10,7 +10,7 @@ function playGame(playerInput) {
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    const computerMove = function(argMoveId) {
+    const computerMove = function() {
         if (argMoveId == 1) {
             return 'kamień';
         } else if (argMoveId == 2) {
