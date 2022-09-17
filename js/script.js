@@ -2,7 +2,7 @@
 {
 //ruch komputera
 
-function playGame(playerInput) {
+const playGame = function (playerInput) {
     clearMessages();
     printMessage('<hr>');
 
@@ -50,7 +50,7 @@ function playGame(playerInput) {
 
     //wynik
 
-    function displayResult(argComputerMove, argPlayerMove) {
+    const displayResult= function (argComputerMove, argPlayerMove) {
    
 
         if (argComputerMove == playerMove) {
